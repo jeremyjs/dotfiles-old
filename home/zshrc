@@ -3,7 +3,7 @@ ZSH_CUSTOM="$HOME/dotfiles/custom"
 ZSH_THEME="jeremy"
 
 DISABLE_AUTO_UPDATE="true"
-COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="false"
 
 setopt auto_cd
 setopt auto_pushd
@@ -22,7 +22,7 @@ function include () {
 include ~/.localrc
 
 # load settings for specific hostnames
-include ~/dotfiles/hosts/$(ls ~/dotfiles/hosts | grep $(hostname -s)) 
+include ~/dotfiles/hosts/$(ls ~/dotfiles/hosts | grep $(hostname -s))
 
 # load rest of files
 for file in ~/dotfiles/bash/*; do

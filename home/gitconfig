@@ -17,6 +17,7 @@
   bm = branch -m
   bv = branch -vv
   bva = branch -vva
+  bd = branch -d
   p = push
   s = status
   sh = show
@@ -27,6 +28,7 @@
   l = log --pretty=oneline --abbrev-commit
   ls = log --stat
   lg = log --pretty=oneline --abbrev-commit --graph
+  reset= reset --soft HEAD
 [color]
   ui = auto
 [core]

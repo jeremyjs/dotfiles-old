@@ -3,7 +3,7 @@ syntax on
 
 set t_Co=256
 set background=dark
-colorscheme pete 
+colorscheme jeremy
 
 " settings
 set mouse=a                     " because mouse

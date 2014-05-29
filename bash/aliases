@@ -32,8 +32,7 @@ alias js='cd app/assets/javascripts'
 alias css='cd app/assets/stylesheets'
 
 # ls
-alias ls='ls -la'
-alias ll='ls'
+alias la='ls -la'
 alias l1='tree --dirsfirst -ChFL 1'
 alias l2='tree --dirsfirst -ChFL 2'
 alias l3='tree --dirsfirst -ChFL 3'
