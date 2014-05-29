@@ -1,26 +1,44 @@
-[apply]
-  whitespace = nowarn
+[user]
+  name = Jeremy Meyer
+  email = jjman505@gmail.com
 [alias]
-  nb = checkout -b
-  lc = log @{1}.. --stat --no-merges
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar)%Creset' --abbrev-commit --date=relative
-  ff = merge --ff-only @{u}
+  a = add
+  aa = add -A
+  au = add -u
+  co = checkout
+  cb = checkout -b
+  c = commit
+  ca = commit -a
+  cm = commit -m
+  cv = commit -v
+  cam = commit -am
+  cav = commit -av
+  cmv = commit -vm
+  camv = commit -avm
+  amend = commit --amend
+  b = branch
+  ba = branch -a
+  bm = branch -m
+  bv = branch -vv
+  bva = branch -vva
+  p = push
+  s = status
+  sh = show
+  d = diff
+  dc = diff --cached
+  cge = config --global --edit
+  cle = config --local --edit
+  l = log --pretty=oneline --abbrev-commit
+  ls = log --stat
+  lg = log --pretty=oneline --abbrev-commit --graph
 [color]
-  diff = auto
-  status = auto
-  branch = auto
+  ui = auto
 [core]
-  excludesfile = ~/.gitignore
-  quotepath = false
-  whitespace = -blank-at-eol
-[mirror]
-  summary = true
-[branch]
-  autosetupmerge = true
-  autosetuprebase = always
+  editor = vim
+  whitespace = trailing-space,space-before-tab
+[diff]
+  renames = copies
 [push]
-  default = tracking
-[rebase]
-  autosquash = true
-[web]
-  browser = open
+  default = current
+[credential]
+  helper = osxkeychain
