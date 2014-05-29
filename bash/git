@@ -1,11 +1,12 @@
-alias gl='git pull'
 alias ga='git add'
-alias gp='git push'
+alias gaa='git add -A'
 alias gd='git diff'
 alias gco='git checkout'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gc='git commit -v'
-alias gca='git commit -v -a'
+alias gcm='git commit -vm'
+alias gca='git commit -va'
+alias gcam='git commit -vam'
 alias gch='git checkout HEAD~2 --' 
 alias gb='git branch -v'
 alias gs="git status -sb"
