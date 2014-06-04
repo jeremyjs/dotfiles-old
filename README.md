@@ -1,5 +1,5 @@
 # My dotfiles
-This is my ideal setup for a Unix/Linux environment. I've taken things from all over the place, and I can't guarentee it will work on your machine as well as it does on mine - this is just what works for me. 
+This is my ideal setup for a Unix/Linux environment. I mostly stole this from Pete (forked), and I can't guarantee it will work on your machine as well as it does on mine - this is just what works for me. 
 
 ### Setup
 
@@ -14,7 +14,7 @@ NOTE: You can run `rake brew` to install some common brew packages I use. This i
 ### Removal
 Run `rake uninstall` inside the repo.
 
-This will remove all of the symlinks and restore any backed up files. 
+This will remove all of the symlinks and restore any backed up files.
 
 ### Vim plugins
 To add more vim plugins, do a `git add submodule https://github.com/...` in the `/janus` folder, and they will automatically load the next time you run vim.
@@ -23,4 +23,4 @@ To add more vim plugins, do a `git add submodule https://github.com/...` in the 
 If you install these dotfiles on multiple hosts, you can put specific
 local config settings in `~/.localrc` and they will be loaded.
 
-You can also add a file inside of the `/hosts` folder to do this. If you're using the `pete` zsh theme, you can customize the color of the prompt based on hostname in that file as well. See my 'prometheus' file for an example. 
+You can also add a file inside of the `/hosts` folder to do this. If you're using the `jeremy` zsh theme, you can customize the color of the prompt based on hostname in that file as well. See my 'prometheus' file for an example. 
