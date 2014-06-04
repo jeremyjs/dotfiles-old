@@ -7,7 +7,7 @@ colorscheme jeremy
 
 " settings
 set mouse=a                     " because mouse
-set number                      " line numbers
+" set number                      " line numbers
 set nobackup                    " don't do backups
 set ruler                       " show cursor position
 set nowritebackup               " no backups
@@ -67,11 +67,12 @@ nnoremap Q q
 nnoremap q <nop>
 map <S-Enter> O<Esc>j
 map <CR> o<Esc>
+" nnoremap <silent> <leader>l :call NumberToggle()<cr>
 
 " nerdtree
 nmap <silent> <Leader>n :NERDTreeToggle<CR>
 let g:NERDTreeDirArrows=1
- 
+
 " nerdtree tab navigation
 map <F1> :tabprev<CR>
 map <F2> :tabnext<CR>

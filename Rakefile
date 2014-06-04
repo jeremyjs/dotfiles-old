@@ -6,7 +6,7 @@ task :brew do
   if !File.exists?("/usr/local/Cellar")
     `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
   end
-  
+
   `brew install ack git libtool imagemagick mysql postgres phantomjs pngcrush rbenv rbenv-gemset ruby-build tmux vim tree ssh-copy-id`
 end
 
@@ -78,7 +78,7 @@ task :uninstall do
 
     if File.exists?("#{ENV["HOME"]}/.#{linkable}.backup")
       puts "✱ Restored #{linkable}"
-      `mv "$HOME/backups/.#{linkable}.backup" "$HOME/.#{linkable}"` 
+      `mv "$HOME/backups/.#{linkable}.backup" "$HOME/.#{linkable}"`
     end
   end
  end

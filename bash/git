@@ -1,3 +1,4 @@
+alias g='git'
 alias gp='git push'
 alias gpl='git pull'
 alias ga='git add'
@@ -9,7 +10,7 @@ alias gc='git commit -v'
 alias gcm='git commit -vm'
 alias gca='git commit -va'
 alias gcam='git commit -vam'
-alias gch='git checkout HEAD~2 --' 
+alias gch='git checkout HEAD~2 --'
 alias gb='git branch -v'
 alias gs="git status -sb"
 alias grm="git ls-files --deleted | xargs git rm"
