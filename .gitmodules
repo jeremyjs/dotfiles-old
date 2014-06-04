@@ -4,3 +4,12 @@
 [submodule "janus/vim-css3-syntax"]
 	path = janus/vim-css3-syntax
 	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "janus/syntastic"]
+	path = janus/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "janus/vim-slim"]
+	path = janus/vim-slim
+	url = https://github.com/slim-template/vim-slim.git
+[submodule "janus/nerdcommenter"]
+	path = janus/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git

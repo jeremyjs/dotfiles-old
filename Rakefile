@@ -6,7 +6,7 @@ task :brew do
   if !File.exists?("/usr/local/Cellar")
     `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
   end
-
+   # TODO: refactor into own listing
   `brew install ack git libtool imagemagick mysql postgres phantomjs pngcrush rbenv rbenv-gemset ruby-build tmux vim tree ssh-copy-id`
 end
 
@@ -94,5 +94,13 @@ task :update_submodules do
     '
   EOS
 end
+
+# task :add_submodule, [:a0, :a1] do |t, args|
+#   args.with_defaults(:a0 => :a0, :a1 => 'janus')
+#   puts "*installing #{args[:a0]} to #{args[:a1]}"
+#   # `grep path .gitmodules | sed 's/.*= //' > temp$$`
+#   # `git submodule add $1 $2`
+#   # `rm temp$$`
+# end
 
 task :default => 'install'
