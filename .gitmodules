@@ -4,6 +4,9 @@
 [submodule "janus/vim-css3-syntax"]
 	path = janus/vim-css3-syntax
 	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "janus/ctrlp"]
+	path = janus/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "janus/syntastic"]
 	path = janus/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -13,3 +16,18 @@
 [submodule "janus/nerdcommenter"]
 	path = janus/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "janus/vim-surround"]
+	path = janus/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "janus/numbers-vim"]
+	path = janus/numbers-vim
+	url = https://github.com/tpope/vim-surround.git
+[submodule "janus/neocomplcache"]
+	path = janus/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "janus/vim-fugitive"]
+	path = janus/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "janus/vim-easymotion"]
+	path = janus/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
