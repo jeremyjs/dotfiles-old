@@ -7,7 +7,8 @@ colorscheme jeremy
 
 " settings
 set mouse=a                     " because mouse
-" set number                      " line numbers
+set number                      " line numbers
+set rnu                         " relative line numbers
 set nobackup                    " don't do backups
 set ruler                       " show cursor position
 set nowritebackup               " no backups
@@ -69,8 +70,11 @@ map <S-Enter> O<Esc>j
 map <CR> o<Esc>
 " nnoremap <silent> <leader>l :call NumberToggle()<cr>
 
+" save on focus lost
+au FocusLost * :wa
+
 " nerdtree
-nmap <silent> <Leader>n :NERDTreeToggle<CR>
+nmap <silent> <leader>n :NERDTreeToggle<CR>
 let g:NERDTreeDirArrows=1
 
 " nerdtree tab navigation
@@ -78,17 +82,17 @@ map <F1> :tabprev<CR>
 map <F2> :tabnext<CR>
 
 " nerdcommenter
-let NERDSpaceDelims=1
-let NERDCompactSexyComs=1
+" let NERDSpaceDelims=1
+" let NERDCompactSexyComs=1
 
 " highlight conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " move between panes
-map <Leader>j <C-w>j
-map <Leader>k <C-w>k
-map <Leader>l <C-w>l
-map <Leader>h <C-w>h
+map <leader>j <C-w>j
+map <leader>k <C-w>k
+map <leader>>l <C-w>l
+map <leader>h <C-w>h
 
 " splitjoin plugin
 nmap zj :SplitjoinSplit<cr>
