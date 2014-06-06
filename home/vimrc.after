@@ -73,9 +73,29 @@ map <CR> o<Esc>
 " save on focus lost
 au FocusLost * :wa
 
+" remove trailing whitespace
+autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+
+" jump to last cursor position when opening a file.
+autocmd BufReadPost * call SetCursorPosition()
+function! SetCursorPosition()
+  if &filetype !~ 'commit\c'
+    if line("'\"") > 0 && line("'\"") <= line("$")
+     exe "normal g`\""
+    endif
+  end
+endfunction
+
 " nerdtree
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 let g:NERDTreeDirArrows=1
+let NERDTreeShowHidden=1
 
 " nerdtree tab navigation
 map <F1> :tabprev<CR>
@@ -121,17 +141,6 @@ map <F3> :%s/"\(\([^"]*\)\)"/'\1'/g<cr>
 " replace hashrockets
 nmap <F4> :s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
 vmap <F4> :'<,'>s/\:\([a-zA-Z_]*\)\s=>/\1\:/g<cr>
-
-" jump to last cursor position when opening a file.
-autocmd BufReadPost * call SetCursorPosition()
-function! SetCursorPosition()
-  if &filetype !~ 'commit\c'
-    if line("'\"") > 0 && line("'\"") <= line("$")
-     exe "normal g`\""
-    endif
-  end
-endfunction
-
 
 " ctrl p for cnuapp
 set wildignore+=/media/**,*//home/alan/media/**,*//home/alan/Music/**,*/*.scssc

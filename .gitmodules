@@ -31,3 +31,12 @@
 [submodule "janus/vim-easymotion"]
 	path = janus/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "janus/vim-coffee-script"]
+	path = janus/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "janus/vim-chef"]
+	path = janus/vim-chef
+	url = https://github.com/dougireton/vim-chef.git
+[submodule "janus/vim-airline"]
+	path = janus/vim-airline
+	url = https://github.com/bling/vim-airline.git
