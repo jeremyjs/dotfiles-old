@@ -1,0 +1,9 @@
+#!/bin/bash
+echo ""
+echo "************************"
+echo "* Current Vim Packages *"
+echo "************************"
+
+grep path .gitmodules | sed 's/.*=.*\//- /' | sort
+
+echo ""
