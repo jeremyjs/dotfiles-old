@@ -111,7 +111,7 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 " move between panes
 map <leader>j <C-w>j
 map <leader>k <C-w>k
-map <leader>>l <C-w>l
+map <leader>l <C-w>l
 map <leader>h <C-w>h
 
 " splitjoin plugin
