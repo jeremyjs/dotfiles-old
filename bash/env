@@ -1,8 +1,9 @@
 export CLICOLOR=1
 export TERM=xterm-256color
-# TODO: script to set ls colors
-export LSCOLORS=exfxcxdxbxegedabagacadk
-export LS_COLORS="di=0;0;93:fi=0:ln=0;35:so=32:pi=0;33:ex=1;31:bd=37;46:cd=37;100:su=37;41:sg=37;46:tw=37;42:ow=37;43:or=95;47:mi=90:"
+# BSD colors
+export LSCOLORS=DxFxbxdxCxbxbxgxgxexEx
+# Linux colors
+export LS_COLORS="no=;;:fi=;;:di=1;;40:ln=1;;40:so=31;40:pi=33;40:ex=1;;40:bd=31;40:cd=31;40:or=;;:mi=;;:su=36;40:sg=36;40:tw=34;40:ow=1;;40:"
 export LESS="-erX"
 export EDITOR="vim"
 

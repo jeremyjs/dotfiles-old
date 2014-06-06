@@ -1,22 +1,28 @@
+
+# http://geoff.greer.fm/lscolors/
+
+###################
+# Linux LS_COLORS #
+###################
+
 # alias ls='ls --color'
 # LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
 # export LS_COLORS
 #
-# di = directory
+# These can be combined, like so: 'di=5;31;42'
+#
+# no = default
 # fi = file
+# di = directory
 # ln = symbolic link
-# pi = fifo file
 # so = socket file
+# pi = fifo file
+# ex = file which is executable (ie. has 'x' set in permissions).
 # bd = block (buffered) special file
 # cd = character (unbuffered) special file
 # or = symbolic link pointing to a non-existent file (orphan)
 # mi = non-existent file pointed to by a symbolic link (visible when you type ls -l)
-# ex = file which is executable (ie. has 'x' set in permissions).
-#
-# The *.rpm=90 parameter at the end tells ls to display any files ending in .rpm in the specified colour,
-# in this case colour 90 (dark grey). This can be applied to any types of files (eg. you could use
-# '*.png=35' to make jpeg files appear purple.) As many or as few parameters as you like can go into
-# the LS_COLORS variable, as long as the parameters are separated by colons.
+# *.[extension] = file extension
 #
 # 0   = default colour
 # 1   = bold
@@ -52,6 +58,33 @@
 # 104 = light blue background
 # 105 = light purple background
 # 106 = turquoise background
+
+################
+# BSD LSCOLORS #
+################
+
+# Letters represent as follows:
+# a - black
+# b - red
+# c - green
+# d - brown
+# e - blue
+# f - purple
+# g - turquoise
+# h - gray
+# x - none
 #
-# These can even be combined, so that a parameter like: 'di=5;31;42'
-# in your LS_COLORS variable would make directories appear in flashing red text with a green background
+# Capital letters represent bold
+#
+# Order of file types:
+# - directory
+# - symbolic link
+# - socket
+# - pipe
+# - executable
+# - block special
+# - character special
+# - setuid executable
+# - setguid executable
+# - directory writable to others, with sticky bit
+# - directory writable to others, no sticky bit
