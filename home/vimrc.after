@@ -35,6 +35,10 @@ set laststatus=1                " status bar only shows if multiple files are op
 set nolist                      " hide invisible characters
 set iskeyword+=-
 
+" highlight characters past column 80
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 call pathogen#infect()
 filetype plugin indent on
 
