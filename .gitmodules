@@ -43,3 +43,6 @@
 [submodule "janus/vim-gitgutter"]
 	path = janus/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "janus/vim-indent-guides"]
+	path = janus/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
