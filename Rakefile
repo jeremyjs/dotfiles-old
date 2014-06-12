@@ -25,7 +25,7 @@ task :install do
   end
 
   puts "✱ Linking submodules"
-  FileUtils.rm_rf("/Users/#{hostname}/.janus")
+  FileUtils.rm_rf("$HOME/.janus")
   `ln -s "$PWD/janus" "$HOME/.janus"`
 
   puts "✱ Linking Colorschemes"
@@ -62,15 +62,15 @@ task :install do
         puts "!!! File already exists: #{target}"
         puts "!!! What do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all"
         case STDIN.gets.chomp
-        when 'o' then overwrite = true
-        when 'b' then backup = true
         when 'O' then overwrite_all = true
+        when 'o' then overwrite = true
         when 'B' then backup_all = true
+        when 'b' then backup = true
         when 'S' then skip_all = true
         when 's' then next
         end
       end
-      FileUtils.rm_rf(target) if overwrite || overwrite_all
+      FileUtils.rm_rf(target) if overwrite || overwrite_al
       `mv "$HOME/.#{linkable}" "$HOME/backups/.#{linkable}.backup"` if backup || backup_all
     end
     puts "✱ Linked #{target}"

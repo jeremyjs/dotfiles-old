@@ -128,6 +128,9 @@ map <F2> :tabnext<CR>
 let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
 
+" gists
+let g:gist_api_url = 'http://git.enova.com/api/v3'
+
 " highlight conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
