@@ -12,7 +12,7 @@ end
 
 task :install do
   linkables = Dir['home/*']
-  vim_modules = Dir['janus']
+  colors = Dir['colors/*']
   hostname = `hostname`.strip
 
   skip_all = false
@@ -25,8 +25,17 @@ task :install do
   end
 
   if !File.exists?("/Users/#{hostname}/.janus")
-    puts "✱ Linking Janus plugin folder"
+    puts "✱ Linking submodules"
     `ln -s "$PWD/janus" "$HOME/.janus"`
+  end
+
+  puts "✱ Linking Colorschemes"
+  colors.each do |color|
+    color = color.sub('colors/','')
+    target = "#{ENV["HOME"]}/.vim/janus/vim/colors/#{color}"
+    FileUtils.rm_rf(target)
+    puts "- linked #{color}"
+    `ln -s "$PWD/colors/#{color}" "#{target}"`
   end
 
   if !File.exists?("/bin/zsh")
