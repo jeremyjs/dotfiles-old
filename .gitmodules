@@ -61,3 +61,6 @@
 [submodule "colors/jeremy-vim"]
 	path = colors/jeremy-vim
 	url = https://github.com/jjman505/jeremy-vim.git
+[submodule "janus/ag-vim"]
+	path = janus/ag-vim
+	url = https://github.com/rking/ag.vim.git

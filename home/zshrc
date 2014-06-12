@@ -13,6 +13,9 @@ autoload -Uz compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
+# fasd config
+eval "$(fasd --init auto)"
+
 # fix rake parameters
 alias rake='noglob rake'
 

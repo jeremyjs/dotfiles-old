@@ -7,7 +7,7 @@ task :brew do
     `ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
   end
    # TODO: refactor into own listing
-  `brew install ack git libtool imagemagick mysql postgres phantomjs pngcrush rbenv rbenv-gemset ruby-build tmux vim tree ssh-copy-id`
+  `brew install ack git libtool imagemagick mysql postgres phantomjs pngcrush rbenv rbenv-gemset ruby-build tmux vim tree ssh-copy-id the_silver_searcher`
 end
 
 task :install do
@@ -24,10 +24,9 @@ task :install do
     `curl -Lo- https://bit.ly/janus-bootstrap | bash`
   end
 
-  if !File.exists?("/Users/#{hostname}/.janus")
-    puts "✱ Linking submodules"
-    `ln -s "$PWD/janus" "$HOME/.janus"`
-  end
+  puts "✱ Linking submodules"
+  FileUtils.rm_rf("/Users/#{hostname}/.janus")
+  `ln -s "$PWD/janus" "$HOME/.janus"`
 
   puts "✱ Linking Colorschemes"
   colors.each do |color|
@@ -45,7 +44,7 @@ task :install do
 
   if !File.exists?("/Users/#{hostname}/.oh-my-zsh")
     puts "✱ Installing oh-my-zsh"
-    `curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`
+    `curl -L http://install.ohmyz.sh | sh`
   end
 
   puts "✱ Syncing gitmodules (janus plugins)"
