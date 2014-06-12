@@ -1,8 +1,8 @@
 [github]
-  user = jjman505
+  user = jmeyer
 [user]
   name = Jeremy Meyer
-  email = jjman505@gmail.com
+  email = jmeyer@enova.com
 [alias]
   a = add
   aa = add -A

@@ -109,10 +109,11 @@ task :update_submodules do
   EOS
 end
 
-task :add_submodule, [:a0, :a1] do |t, args|
-  install_path = "janus/#{args[:a1]}"
-  puts "*installing #{args[:a0]} to #{install_path}"
-  `git submodule add #{args[:a0]} #{install_path}`
-end
+# TODO: fix add_submodule
+# task :add_submodule, [:a0, :a1] do |t, args|
+#   install_path = "janus/#{args[:a1]}"
+#   puts "*installing #{args[:a0]} to #{install_path}"
+#   `git submodule add #{args[:a0]} #{install_path}`
+# end
 
 task :default => 'install'
