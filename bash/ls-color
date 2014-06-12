@@ -17,7 +17,7 @@
 # ln = symbolic link
 # so = socket file
 # pi = fifo file
-# ex = file which is executable (ie. has 'x' set in permissions).
+##ex = file which is executable (ie. has 'x' set in permissions).
 # bd = block (buffered) special file
 # cd = character (unbuffered) special file
 # or = symbolic link pointing to a non-existent file (orphan)

@@ -3,7 +3,7 @@ export TERM=xterm-256color
 # BSD colors
 export LSCOLORS=DxFxbxdxCxbxbxgxgxexEx
 # Linux colors
-export LS_COLORS="no=;;:fi=;;:di=1;;40:ln=1;;40:so=31;40:pi=33;40:ex=1;;40:bd=31;40:cd=31;40:or=;;:mi=;;:su=36;40:sg=36;40:tw=34;40:ow=1;;40:"
+export LS_COLORS="no=0:fi=0:di=1;93:ln=95:so=31:pi=33:bd=36:cd=37"
 export LESS="-erX"
 export EDITOR="vim"
 
