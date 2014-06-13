@@ -3,12 +3,12 @@ syntax on
 
 set t_Co=256
 set background=dark
-" colorscheme jeremy
+colorscheme jeremy
 
 " settings
 set mouse=a                     " because mouse
 set number                      " line numbers
-set rnu                         " relative line numbers
+set relativenumber              " relative line numbers
 set nobackup                    " don't do backups
 set ruler                       " show cursor position
 set nowritebackup               " no backups
@@ -24,8 +24,7 @@ set ignorecase                  " ignore case when searching
 set smartcase                   " ignore search case if all lowercase
 set hlsearch                    " highlight search terms
 set pastetoggle=<F2>            " toggle paste indentation w/ F2
-set clipboard+=unnamed          " share clipboard
-set clipboard=unnamed           " please work
+set clipboard=unnamed           " share clipboard
 set ttyfast                     " smoother redraws
 set lazyredraw                  " do not redraw while executing macros
 set showcmd                     " display incomplete commands
@@ -34,6 +33,12 @@ set shortmess+=atI              " eliminate annoying 'Press ENTER or type comman
 set laststatus=1                " status bar only shows if multiple files are open
 set nolist                      " hide invisible characters
 set iskeyword+=-
+
+" This is vim, you don't need arrow keys.
+map <Up> <NOP>
+map <Down> <NOP>
+map <Left> <NOP>
+map <Right> <NOP>
 
 " highlight characters past column 80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -57,7 +62,9 @@ set encoding=utf-8
 let mapleader = ","
 nnoremap <leader><space> :noh<CR>
 inoremap jj <Esc>
+inoremap JJ <C-Esc>
 inoremap jk <Esc>
+inoremap kk <Esc>
 nnoremap ; :
 noremap Y $
 noremap T ^
@@ -68,18 +75,25 @@ inoremap <C-tab> <Esc><<i
 nnoremap j gj
 nnoremap k gk
 nnoremap <silent> '. :cd %:p:h<cr>
-nnoremap Q q
-nnoremap q <nop>
+cnoremap Q q
 map <S-Enter> O<Esc>j
 map <CR> o<Esc>
 " nnoremap <silent> <leader>l :call NumberToggle()<cr>
 
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" replace currently selected text with default register
+" without yanking it
+vnoremap <leader>p "_dP
+
 " save on focus lost
-au FocusLost * :wa
+autocmd FocusLost * :wa
 
 " remove trailing whitespace
-autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-fun! <SID>StripTrailingWhitespaces()
+map <leader>rw :call StripTrailingWhitespaces()<CR>
+fun! StripTrailingWhitespaces()
   let l = line(".")
   let c = col(".")
   %s/\s\+$//e
