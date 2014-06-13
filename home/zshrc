@@ -15,6 +15,7 @@ source $ZSH/oh-my-zsh.sh
 
 # fasd config
 eval "$(fasd --init auto)"
+alias v='a -e vim'
 
 # fix rake parameters
 alias rake='noglob rake'
