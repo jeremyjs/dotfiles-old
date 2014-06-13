@@ -100,6 +100,9 @@ fun! StripTrailingWhitespaces()
   call cursor(l, c)
 endfun
 
+" ,t to open TaskList
+nnoremap <leader>t <Plug>TaskList
+
 " jump to last cursor position when opening a file.
 autocmd BufReadPost * call SetCursorPosition()
 function! SetCursorPosition()
@@ -111,7 +114,7 @@ function! SetCursorPosition()
 endfunction
 
 " nerdtree
-nmap <silent> <leader>n :NERDTreeToggle<CR>
+nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
 let g:NERDTreeDirArrows=1
 let NERDTreeShowHidden=1
 
@@ -120,8 +123,8 @@ map <F1> :tabprev<CR>
 map <F2> :tabnext<CR>
 
 " nerdcommenter
-" let NERDSpaceDelims=1
-" let NERDCompactSexyComs=1
+let NERDSpaceDelims=1
+let NERDCompactSexyComs=1
 
 " highlight conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'

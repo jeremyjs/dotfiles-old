@@ -11,7 +11,8 @@ task :brew do
 end
 
 task :install do
-  linkables = Dir['home/*'] + ['janus']
+  linkables = Dir['home/*']
+  vim_modules = Dir['janus']
   hostname = `hostname`.strip
 
   skip_all = false
@@ -21,6 +22,11 @@ task :install do
   if !File.exists?("/Users/#{hostname}/.vim/janus")
     puts "✱ Installing Janus"
     `curl -Lo- https://bit.ly/janus-bootstrap | bash`
+  end
+
+  if !File.exists?("/Users/#{hostname}/.janus")
+    puts "✱ Linking Janus plugin folder"
+    `ln -s "$PWD/janus" "$HOME/.janus"`
   end
 
   if !File.exists?("/bin/zsh")
@@ -95,12 +101,10 @@ task :update_submodules do
   EOS
 end
 
-# task :add_submodule, [:a0, :a1] do |t, args|
-#   args.with_defaults(:a0 => :a0, :a1 => 'janus')
-#   puts "*installing #{args[:a0]} to #{args[:a1]}"
-#   # `grep path .gitmodules | sed 's/.*= //' > temp$$`
-#   # `git submodule add $1 $2`
-#   # `rm temp$$`
-# end
+task :add_submodule, [:a0, :a1] do |t, args|
+  install_path = "janus/#{args[:a1]}"
+  puts "*installing #{args[:a0]} to #{install_path}"
+  `git submodule add #{args[:a0]} #{install_path}`
+end
 
 task :default => 'install'

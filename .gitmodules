@@ -1,9 +1,6 @@
 [submodule "janus/splitjoin"]
 	path = janus/splitjoin
 	url = https://github.com/AndrewRadev/splitjoin.vim
-[submodule "janus/vim-css3-syntax"]
-	path = janus/vim-css3-syntax
-	url = https://github.com/hail2u/vim-css3-syntax.git
 [submodule "janus/ctrlp"]
 	path = janus/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
@@ -31,9 +28,6 @@
 [submodule "janus/vim-easymotion"]
 	path = janus/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "janus/vim-coffee-script"]
-	path = janus/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "janus/vim-chef"]
 	path = janus/vim-chef
 	url = https://github.com/dougireton/vim-chef.git
@@ -49,6 +43,18 @@
 [submodule "janus/jeremy"]
 	path = janus/jeremy
 	url = https://github.com/jjman505/jeremy.vim.git
-[submodule "janus/tasklist"]
-	path = janus/tasklist
-	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "janus/nerdtree-tabs"]
+	path = janus/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "janus/searchcomplete"]
+	path = janus/searchcomplete
+	url = https://github.com/vim-scripts/SearchComplete.git
+[submodule "janus/gist-vim"]
+	path = janus/gist-vim
+	url = https://github.com/mattn/gist-vim.git
+[submodule "janus/emmet"]
+	path = janus/emmet
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "janus/minibufexpl"]
+	path = janus/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
