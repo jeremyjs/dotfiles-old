@@ -29,11 +29,11 @@ set ttyfast                     " smoother redraws
 set lazyredraw                  " do not redraw while executing macros
 set showcmd                     " display incomplete commands
 set title                       " set the title
-set shortmess+=atI              " eliminate annoying 'Press ENTER or type command to continue' notices
+set shortmess=atI               " eliminate annoying 'Press ENTER or type command to continue' notices
 set laststatus=1                " status bar only shows if multiple files are open
 set nolist                      " hide invisible characters
 set iskeyword+=-                " allow dashes in keywords
-set laststatus                  " always display statusline
+set laststatus=2                " always display statusline
 
 " This is vim, you don't need arrow keys.
 map <Up> <NOP>
