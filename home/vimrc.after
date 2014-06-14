@@ -32,7 +32,8 @@ set title                       " set the title
 set shortmess+=atI              " eliminate annoying 'Press ENTER or type command to continue' notices
 set laststatus=1                " status bar only shows if multiple files are open
 set nolist                      " hide invisible characters
-set iskeyword+=-
+set iskeyword+=-                " allow dashes in keywords
+set laststatus                  " always display statusline
 
 " This is vim, you don't need arrow keys.
 map <Up> <NOP>
@@ -100,9 +101,6 @@ fun! StripTrailingWhitespaces()
   call cursor(l, c)
 endfun
 
-" ,t to open TaskList
-nnoremap <leader>t <Plug>TaskList
-
 " jump to last cursor position when opening a file.
 autocmd BufReadPost * call SetCursorPosition()
 function! SetCursorPosition()
@@ -117,6 +115,10 @@ endfunction
 nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
 let g:NERDTreeDirArrows=1
 let NERDTreeShowHidden=1
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='dark'
 
 " nerdtree tab navigation
 map <F1> :tabprev<CR>
