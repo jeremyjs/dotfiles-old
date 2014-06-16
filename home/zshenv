@@ -1,3 +1,6 @@
 # rbenv
 eval "$(rbenv init -)"
 
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+[ -d "/Users/jmeyer1/code/8b/bin" ] && export PATH="/Users/jmeyer1/code/8b/bin:$PATH"
