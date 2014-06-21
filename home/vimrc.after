@@ -84,7 +84,7 @@ vnoremap <leader>d "_d
 vnoremap <leader>p "_dP
 
 " save on focus lost
-autocmd FocusLost * :wa
+autocmd FocusLost * silent! :wa
 
 " remove trailing whitespace
 map <leader>rw :call StripTrailingWhitespaces()<CR>
@@ -119,8 +119,8 @@ map <F1> :tabprev<CR>
 map <F2> :tabnext<CR>
 
 " nerdcommenter
-let NERDSpaceDelims=1
-let NERDCompactSexyComs=1
+" let NERDSpaceDelims=1
+" let NERDCompactSexyComs=1
 
 " gists
 let g:gist_api_url = 'http://git.enova.com/api/v3'

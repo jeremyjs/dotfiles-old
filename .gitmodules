@@ -64,3 +64,6 @@
 [submodule "janus/jade"]
 	path = janus/jade
 	url = https://github.com/digitaltoad/vim-jade.git
+[submodule "janus/vitality"]
+	path = janus/vitality
+	url = https://github.com/sjl/vitality.vim.git
