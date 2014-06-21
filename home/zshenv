@@ -1,6 +1,7 @@
 # rbenv
 eval "$(rbenv init -)"
 
+[ -d "/Users/jmeyer1/Code/8b/bin" ] && export PATH="/Users/jmeyer1/Code/8b/bin:$PATH"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-[ -d "/Users/jmeyer1/code/8b/bin" ] && export PATH="/Users/jmeyer1/code/8b/bin:$PATH"
+RUBIES+=(~/.rbenv/versions/*)

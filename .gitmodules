@@ -16,9 +16,6 @@
 [submodule "janus/vim-surround"]
 	path = janus/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "janus/numbers-vim"]
-	path = janus/numbers-vim
-	url = https://github.com/tpope/vim-surround.git
 [submodule "janus/neocomplcache"]
 	path = janus/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.vim.git

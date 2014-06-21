@@ -70,7 +70,7 @@ task :install do
         when 's' then next
         end
       end
-      FileUtils.rm_rf(target) if overwrite || overwrite_al
+      FileUtils.rm_rf(target) if overwrite || overwrite_all
       `mv "$HOME/.#{linkable}" "$HOME/backups/.#{linkable}.backup"` if backup || backup_all
     end
     puts "✱ Linked #{target}"
