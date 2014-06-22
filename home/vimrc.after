@@ -84,7 +84,7 @@ vnoremap <leader>d "_d
 vnoremap <leader>p "_dP
 
 " save on focus lost
-autocmd FocusLost * silent! :wa
+" autocmd FocusLost * :wa
 
 " remove trailing whitespace
 map <leader>rw :call StripTrailingWhitespaces()<CR>
