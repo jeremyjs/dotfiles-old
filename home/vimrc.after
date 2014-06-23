@@ -83,8 +83,15 @@ vnoremap <leader>d "_d
 " without yanking it
 vnoremap <leader>p "_dP
 
+" handle correct paste indentation
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+
 " save on focus lost
 " autocmd FocusLost * :wa
+
+" map space to insert a single space under the cursor in command mode
+nnoremap <space> :exec "normal i".nr2char(getchar())."\e"<CR>
 
 " remove trailing whitespace
 map <leader>rw :call StripTrailingWhitespaces()<CR>
