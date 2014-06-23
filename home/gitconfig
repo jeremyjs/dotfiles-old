@@ -21,6 +21,7 @@
   bva = branch -vva
   bd = branch -d
   p = push
+  pl = pull
   s = status
   sh = show
   d = diff
