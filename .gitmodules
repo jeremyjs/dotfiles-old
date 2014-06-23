@@ -16,9 +16,6 @@
 [submodule "janus/vim-surround"]
 	path = janus/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "janus/neocomplcache"]
-	path = janus/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.vim.git
 [submodule "janus/vim-fugitive"]
 	path = janus/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git

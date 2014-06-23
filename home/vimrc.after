@@ -1,3 +1,5 @@
+set nocompatible
+
 " colors
 syntax on
 
@@ -89,9 +91,20 @@ set pastetoggle=<F2>
 
 " save on focus lost
 " autocmd FocusLost * :wa
+"
+" surround with quotes
+map ,s ysiw
 
 " map space to insert a single space under the cursor in command mode
-nnoremap <space> :exec "normal i".nr2char(getchar())."\e"<CR>
+nnoremap <silent> <Space> :call InsertSingle()<CR>
+function! InsertSingle()
+  sleep 120m|let l:a = getchar(0)
+  if l:a != 0
+    silent! exec "normal a" . nr2char(l:a)
+  else
+    silent! exec "normal a "
+  endif
+endfunction
 
 " remove trailing whitespace
 map <leader>rw :call StripTrailingWhitespaces()<CR>
