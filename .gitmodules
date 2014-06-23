@@ -10,30 +10,18 @@
 [submodule "janus/vim-slim"]
 	path = janus/vim-slim
 	url = https://github.com/slim-template/vim-slim.git
-[submodule "janus/nerdcommenter"]
-	path = janus/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "janus/vim-surround"]
 	path = janus/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "janus/vim-fugitive"]
 	path = janus/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "janus/vim-easymotion"]
-	path = janus/vim-easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "janus/vim-chef"]
-	path = janus/vim-chef
-	url = https://github.com/dougireton/vim-chef.git
 [submodule "janus/vim-airline"]
 	path = janus/vim-airline
 	url = https://github.com/bling/vim-airline.git
 [submodule "janus/vim-gitgutter"]
 	path = janus/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "janus/vim-indent-guides"]
-	path = janus/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "janus/nerdtree-tabs"]
 	path = janus/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
@@ -49,9 +37,6 @@
 [submodule "janus/minibufexpl"]
 	path = janus/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim.git
-[submodule "janus/supertab"]
-	path = janus/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "colors/jeremy-vim"]
 	path = colors/jeremy-vim
 	url = https://github.com/jjman505/jeremy-vim.git
