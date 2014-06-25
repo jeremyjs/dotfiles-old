@@ -34,9 +34,6 @@
 [submodule "janus/emmet"]
 	path = janus/emmet
 	url = https://github.com/mattn/emmet-vim.git
-[submodule "janus/minibufexpl"]
-	path = janus/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "colors/jeremy-vim"]
 	path = colors/jeremy-vim
 	url = https://github.com/jjman505/jeremy-vim.git
