@@ -59,8 +59,10 @@ set encoding=utf-8
 " custom binds I use
 let mapleader = ","
 nnoremap <leader><space> :noh<CR>
-imap jk <Esc>
-imap kj <Esc>
+map jk <Esc>
+map kj <Esc>
+map jj <Esc>
+map JK <Esc>
 map JK <Esc>
 map KJ <esc>
 nnoremap ; :
