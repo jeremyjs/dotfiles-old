@@ -64,9 +64,9 @@ imap kj <Esc>
 map JK <Esc>
 map KJ <esc>
 nnoremap ; :
-noremap y $
-noremap t ^
-noremap k i<cr><esc>
+noremap Y $
+noremap T ^
+noremap K i<cr><esc>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>k :set list!<CR>
 inoremap <c-tab> <Esc><<i
