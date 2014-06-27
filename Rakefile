@@ -14,6 +14,9 @@ task :install do
   linkables = Dir['home/*']
   colors = Dir['colors/*']
   hostname = `hostname`.strip
+  if !File.exists?("~/.vim/undodir")
+    `mkdir ~/.vim/undodir`
+  end
 
   skip_all = false
   overwrite_all = false

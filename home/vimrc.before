@@ -1,2 +1,5 @@
 call janus#disable_plugin('css-color')
-call janus#disable_plugin('syntastic')
+call janus#disable_plugin('tagbar')
+call janus#disable_plugin('easymotion')
+call janus#disable_plugin('nrrwrgn')
+call janus#disable_plugin('buffergator')

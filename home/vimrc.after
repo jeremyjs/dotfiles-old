@@ -32,6 +32,8 @@ set shortmess=atI               " eliminate annoying 'Press ENTER or type comman
 set laststatus=1                " status bar only shows if multiple files are open
 set nolist                      " hide invisible characters
 set iskeyword+=-                " allow dashes in keywords
+set undofile                    " save undo buffer between vim instances
+set undodir=~/.vim/undodir      " set directory for undo buffers
 
 " This is vim, you don't need arrow keys.
 map <Up> <NOP>
@@ -57,17 +59,17 @@ set encoding=utf-8
 " custom binds I use
 let mapleader = ","
 nnoremap <leader><space> :noh<CR>
-inoremap jj <Esc>
-inoremap JJ <C-Esc>
-inoremap jk <Esc>
-inoremap kk <Esc>
+imap jk <Esc>
+imap kj <Esc>
+map JK <Esc>
+map KJ <esc>
 nnoremap ; :
-noremap Y $
-noremap T ^
-noremap K i<CR><Esc>
+noremap y $
+noremap t ^
+noremap k i<cr><esc>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>k :set list!<CR>
-inoremap <C-tab> <Esc><<i
+inoremap <c-tab> <Esc><<i
 nnoremap j gj
 nnoremap k gk
 nnoremap <silent> '. :cd %:p:h<cr>
@@ -113,10 +115,6 @@ fun! StripTrailingWhitespaces()
   call cursor(l, c)
 endfun
 
-" Persistent undo
-set undodir=C:\vim\undodir
-set undofile
-
 " jump to last cursor position when opening a file.
 autocmd BufReadPost * call SetCursorPosition()
 function! SetCursorPosition()
@@ -126,6 +124,9 @@ function! SetCursorPosition()
     endif
   end
 endfunction
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " nerdtree
 nmap <silent> <leader>n :NERDTreeTabsToggle<CR>
