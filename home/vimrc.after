@@ -76,6 +76,20 @@ cnoremap Q q
 map <S-Enter> O<Esc>j
 map <CR> o<Esc>
 
+" for f{char} navigation
+nnoremap n ;
+nnoremap N ,
+nnoremap m n
+nnoremap M N
+
+" to macro better
+nnoremap ,q qq
+nnoremap Q q
+nnoremap q @q
+
+" select outer
+nnoremap co c2i
+
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
@@ -151,9 +165,9 @@ let g:gist_api_url = 'http://git.enova.com/api/v3'
 let g:xmpfilter_cmd = "seeing_is_believing"
 
 " auto insert mark at appropriate spot.
-autocmd FileType ruby nmap <buffer> <leader>x <Plug>(seeing_is_believing-run):call StripTrailingWhitespaces()<CR>
-autocmd FileType ruby xmap <buffer> <leader>x <Plug>(seeing_is_believing-run):call StripTrailingWhitespaces()<CR>
-autocmd FileType ruby imap <buffer> <leader>x <Plug>(seeing_is_believing-run):call StripTrailingWhitespaces()<CR>
+autocmd FileType ruby nmap <buffer> <leader>x <Plug>(seeing_is_believing-run)
+autocmd FileType ruby xmap <buffer> <leader>x <Plug>(seeing_is_believing-run)
+autocmd FileType ruby imap <buffer> <leader>x <Plug>(seeing_is_believing-run)
 
 " mark certain lines
 autocmd FileType ruby nmap <buffer> <leader>m <Plug>(seeing_is_believing-mark)
@@ -161,9 +175,9 @@ autocmd FileType ruby xmap <buffer> <leader>m <Plug>(seeing_is_believing-mark)
 autocmd FileType ruby imap <buffer> <leader>m <Plug>(seeing_is_believing-mark)
 
 " clean all marks
-autocmd FileType ruby nmap <buffer> <leader>cl <Plug>(seeing_is_believing-clean)
-autocmd FileType ruby xmap <buffer> <leader>cl <Plug>(seeing_is_believing-clean)
-autocmd FileType ruby imap <buffer> <leader>cl <Plug>(seeing_is_believing-clean)
+autocmd FileType ruby nmap <buffer> <leader>cl <Plug>(seeing_is_believing-clean):call StripTrailingWhitespaces()<CR>
+autocmd FileType ruby xmap <buffer> <leader>cl <Plug>(seeing_is_believing-clean):call StripTrailingWhitespaces()<CR>
+autocmd FileType ruby imap <buffer> <leader>cl <Plug>(seeing_is_believing-clean):call StripTrailingWhitespaces()<CR>
 
 " run only marked / xmpfilter compatible
 autocmd FileType ruby nmap <buffer> <leader>cx <Plug>(seeing_is_believing-run_-x)
