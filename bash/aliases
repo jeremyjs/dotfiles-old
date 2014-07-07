@@ -12,7 +12,7 @@ alias be='bundle exec'
 alias rb='rbenv'
 alias pow='powify'
 alias powsr='powify server restart'
-alias rdb='rake db:create db:migrate db:seed'
+alias rdb='rake db:drop db:create db:migrate db:seed'
 
 alias fs="stat -f '%z bytes'"
 alias df="df -h"
