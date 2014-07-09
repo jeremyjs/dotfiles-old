@@ -83,10 +83,10 @@ nnoremap m n
 nnoremap M N
 
 " to macro better
-nnoremap ,q qq
+nnoremap ,q qx
 nnoremap Q q
 vnoremap Q q
-nnoremap q @q
+nnoremap q @x
 
 " select outer
 nnoremap co c2i
