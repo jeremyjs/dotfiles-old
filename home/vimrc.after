@@ -262,3 +262,6 @@ let g:ctrlp_open_multiple_files = 't'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.hg$\|\.svn$',
   \}
+
+" syntax highlighting for .ejs
+au BufNewFile,BufRead *.ejs set filetype=html
