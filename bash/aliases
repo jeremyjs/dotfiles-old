@@ -48,3 +48,5 @@ else
   alias v='vim'
 fi
 
+alias jarvis='git pull upstream master; git push origin; bundle install; rdb; sleep 0.5; rails s'
+
