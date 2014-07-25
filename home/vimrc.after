@@ -82,12 +82,6 @@ nnoremap N ,
 nnoremap m n
 nnoremap M N
 
-" to macro better
-nnoremap ,q qx
-nnoremap Q q
-vnoremap Q q
-nnoremap q @x
-
 " select outer
 nnoremap co c2i
 
@@ -168,6 +162,9 @@ map <F2> :tabnext<CR>
 
 " gists
 let g:gist_api_url = 'http://git.enova.com/api/v3'
+
+" lint ruby code with f9
+autocmd FileType ruby map <F9> :w<CR>:!ruby -c %<CR>
 
 " seeing is believing
 let g:xmpfilter_cmd = "seeing_is_believing"
