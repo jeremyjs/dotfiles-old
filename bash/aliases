@@ -48,5 +48,6 @@ else
   alias v='vim'
 fi
 
-alias jarvis='git pull upstream master; git push origin; bundle install; rdb; sleep 0.5; rails s'
+alias jarvis='git pull upstream master; git push origin; bundle install; rdb; rake conduit:update_providers; sleep 0.5; rails s'
+# alias git="python /Users/$USER/dotfiles/git-undo/wrapper.py"
 

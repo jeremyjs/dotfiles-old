@@ -26,8 +26,8 @@
   sh = show
   d = diff
   dc = diff --cached
-  cge = config --global --edit
-  cle = config --local --edit
+  gedit = config --global --edit
+  edit = config --local --edit
   l = log --pretty=oneline --abbrev-commit
   ls = log --stat
   lg = log --pretty=oneline --abbrev-commit --graph

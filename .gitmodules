@@ -58,3 +58,6 @@
 [submodule "janus/tern"]
 	path = janus/tern
 	url = https://github.com/marijnh/tern_for_vim.git
+[submodule "git-undo"]
+	path = git-undo
+	url = https://github.com/zhangela/git-undo.git
