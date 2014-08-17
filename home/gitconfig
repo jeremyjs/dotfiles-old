@@ -1,8 +1,8 @@
 [github]
-  user = jmeyer
+  user = jjman505
 [user]
   name = Jeremy Meyer
-  email = jmeyer1@enova.com
+  email = jjman505@gmail.com
 [alias]
   a = add
   aa = add -A
@@ -41,5 +41,3 @@
   renames = copies
 [push]
   default = current
-[credential]
-  helper = osxkeychain
