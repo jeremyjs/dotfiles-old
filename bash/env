@@ -25,5 +25,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
 
 # Go Programming Language
-export GOROOT=$HOME/go
+export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
