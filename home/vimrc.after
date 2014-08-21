@@ -60,8 +60,6 @@ set encoding=utf-8
 let mapleader = ","
 nnoremap <leader><space> :noh<CR>
 imap jk <Esc>
-imap jj <Esc>
-imap JJ <Esc>
 nnoremap ; :
 noremap Y $
 noremap T ^
@@ -133,6 +131,9 @@ function! SetCursorPosition()
     endif
   end
 endfunction
+
+" Notes
+" function no()
 
 " windowswap
 let g:windowswap_map_keys = 0 "prevent default bindings
