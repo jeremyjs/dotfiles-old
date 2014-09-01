@@ -33,7 +33,7 @@
   lg = log --pretty=oneline --abbrev-commit --graph
   reset= reset --soft HEAD
 [color]
-  ui = auto
+	ui = true
 [core]
   editor = vim
   whitespace = trailing-space,space-before-tab

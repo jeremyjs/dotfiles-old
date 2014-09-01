@@ -12,9 +12,7 @@ setopt histignoredups
 autoload -Uz compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
-
-# fasd config
-eval "$(fasd --init auto)"
+source ~/.nvm/nvm.sh
 
 # fix rake parameters
 alias rake='noglob rake'
@@ -37,3 +35,4 @@ done
 
 PERL_MB_OPT="--install_base \"/Users/jmeyer1/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/jmeyer1/perl5"; export PERL_MM_OPT;
+
