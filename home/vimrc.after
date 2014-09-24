@@ -221,6 +221,9 @@ nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
 
+" toggle wrap text
+map <F10> :set wrap!<cr>
+
 " replace quotes
 map <F3> :%s/"\(\([^"]*\)\)"/'\1'/g<cr>
 
