@@ -34,6 +34,8 @@ alias nc='cd ~/work/netcredit/apps'
 alias js='cd app/assets/javascripts'
 alias css='cd app/assets/stylesheets'
 
+alias android-studio='studio.sh'
+
 # ls
 alias la='ls -la'
 alias l1='tree --dirsfirst -ChFL 1'

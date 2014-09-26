@@ -21,6 +21,7 @@ export HISTSIZE=100000
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/opt/android-studio/bin:$PATH"
 
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/X11/lib/pkgconfig
 
