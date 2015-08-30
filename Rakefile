@@ -22,15 +22,6 @@ task :install do
   overwrite_all = false
   backup_all = false
 
-  if !File.exists?("/Users/#{hostname}/.vim/janus")
-    puts "✱ Installing Janus"
-    `curl -Lo- https://bit.ly/janus-bootstrap | bash`
-  end
-
-  puts "✱ Linking submodules"
-  FileUtils.rm_rf("$HOME/.janus")
-  `ln -s "$PWD/janus" "$HOME/.janus"`
-
   puts "✱ Linking Colorschemes"
   colors.each do |color|
     color = color.sub('colors/','')
@@ -49,9 +40,6 @@ task :install do
     puts "✱ Installing oh-my-zsh"
     `curl -L http://install.ohmyz.sh | sh`
   end
-
-  puts "✱ Syncing gitmodules (janus plugins)"
-  `git submodule update --init`
 
   puts "\n✱ Symlinking dotfiles"
   linkables.each do |linkable|
