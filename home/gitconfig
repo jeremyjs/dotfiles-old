@@ -41,6 +41,7 @@
   autocrlf = input
 [diff]
   renames = copies
+	submodule = log
 [push]
 	default = current
 [credential]
