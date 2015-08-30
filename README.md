@@ -1,8 +1,7 @@
 # My dotfiles
-This is my ideal setup for a Unix/Linux environment. I mostly stole this from Pete (forked), and I can't guarantee it will work on your machine as well as it does on mine - this is just what works for me.
+This is my ideal setup for a Unix/Linux environment. I can't guarantee it will work on your machine as well as it does on mine - this is just what works for me.
 
 ### Setup
-
 Run `rake` inside the repo.
 
 This will install Janus, install zsh and oh-my-zsh, sync git submodules for vim plugins (in ~/.janus), then symlink all of the config files from the repo into your home directory.
