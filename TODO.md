@@ -1,3 +1,4 @@
 # Todo
-- git aliases depend on gitconfig
-- update command for faster reinstalls
+- Make git aliases depend on gitconfig
+- Create an update command for faster reinstalls
+- Share code between bashrc and zshrc
