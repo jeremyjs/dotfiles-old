@@ -1,3 +1,4 @@
+
 alias g="git"
 alias gp="git push"
 alias gpl="git pull"
@@ -14,5 +15,6 @@ alias gcl="git clone"
 alias gb="git branch -v"
 alias gs="git status -sb"
 alias gra="git remote add"
-alias grm="git ls-files --deleted | xargs git rm"
+alias grm="git rm -r"
+alias grma="git ls-files --deleted | xargs git rm"
 alias gitundopush="git push -f origin HEAD^:master"
