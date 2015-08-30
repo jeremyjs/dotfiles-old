@@ -18,3 +18,6 @@ alias gra="git remote add"
 alias grm="git rm -r"
 alias grma="git ls-files --deleted | xargs git rm"
 alias gitundopush="git push -f origin HEAD^:master"
+
+# remove sensitive keys and such from git history
+alias git-clean="git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch $1' --prune-empty --tag-name-filter cat -- --all"
