@@ -6,7 +6,7 @@
 [alias]
   a = add
   aa = add -A
-  au = add -u
+  # au = add -u
   co = checkout
   cb = checkout -b
   c = commit -v
@@ -16,7 +16,7 @@
   amend = commit --amend
   b = branch
   ba = branch -a
-  bm = branch -m
+  # bm = branch -m
   bv = branch -vv
   bva = branch -vva
   bd = branch -d
@@ -31,15 +31,17 @@
   l = log --pretty=oneline --abbrev-commit
   ls = log --stat
   lg = log --pretty=oneline --abbrev-commit --graph
-  reset= reset --soft HEAD
+  reset = reset --soft HEAD
+  rb = reset --hard HEAD
+  rp = remote update --prune
 [color]
 	ui = true
 [core]
   editor = vim
-  whitespace = trailing-space,space-before-tab
+  autocrlf = input
 [diff]
   renames = copies
 [push]
-  default = current
+	default = current
 [credential]
-	helper = cache
+	helper = cache --timeout=604800
