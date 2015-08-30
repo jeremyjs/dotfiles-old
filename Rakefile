@@ -86,18 +86,6 @@ task :uninstall do
       `mv "$HOME/backups/.#{linkable}.backup" "$HOME/.#{linkable}"`
     end
   end
- end
-
-# thanks mislav
-task :update_submodules do
-  system <<-EOS
-    git submodule foreach '
-      rev=$(git rev-parse HEAD)
-      git pull --quiet --ff-only --no-rebase origin master &&
-      git --no-pager log --no-merges --pretty=format:"%s %Cgreen(%ar)%Creset" --date=relative ${rev}..
-      echo
-    '
-  EOS
 end
 
 task :default => 'install'
