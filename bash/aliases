@@ -35,6 +35,7 @@ alias js='cd app/assets/javascripts'
 alias css='cd app/assets/stylesheets'
 
 alias android-studio='studio.sh'
+alias adt='studio.sh'
 
 # ls
 alias la='ls -la'
