@@ -33,7 +33,7 @@
   lg = log --pretty=oneline --abbrev-commit --graph
   reset = reset --soft HEAD
   rb = reset --hard HEAD
-  rp = remote update --prune
+  up = remote update --prune
 [color]
 	ui = true
 [core]
