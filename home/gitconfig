@@ -35,14 +35,14 @@
   rb = reset --hard HEAD
   up = remote update --prune
 [color]
-	ui = true
+  ui = true
 [core]
   editor = vim
   autocrlf = input
 [diff]
   renames = copies
-	submodule = log
+  submodule = log
 [push]
-	default = current
+  default = current
 [credential]
-	helper = cache --timeout=604800
+  helper = cache --timeout=604800
