@@ -47,7 +47,7 @@ alias fuck='$(thefuck $(fc -ln -1))'
 # use the local version of gulp
 alias gulp='node_modules/.bin/gulp'
 
-export PATH="/home/jeremy/.ralph/aliases/":$PATH
+export PATH="/home/jeremy/.ralph/aliases":$PATH
 export PATH="/home/jeremy/pebble-dev/PebbleSDK-3.0/bin":$PATH
 alias brainworkshop="python brainworkshop/brainworkshop.pyw"
 
