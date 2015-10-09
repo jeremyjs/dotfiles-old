@@ -144,4 +144,6 @@ explain () {
 # If so, try specifying a cipher in the curl commands: curl --ciphers ecdhe_ecdsa_aes_128_sha
 
 # LinuxBrew
-PATH=/home/jeremy/.linuxbrew/bin:$PATH
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
