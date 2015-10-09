@@ -142,3 +142,6 @@ explain () {
 # $ curl https://www.mankier.com
 # curl: (35) Cannot communicate securely with peer: no common encryption algorithm(s).
 # If so, try specifying a cipher in the curl commands: curl --ciphers ecdhe_ecdsa_aes_128_sha
+
+# LinuxBrew
+PATH=/home/jeremy/.linuxbrew/bin:$PATH
