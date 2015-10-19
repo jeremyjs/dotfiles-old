@@ -46,3 +46,5 @@
   default = current
 [credential]
   helper = cache --timeout=604800
+[rebase]
+  autosquash = true
