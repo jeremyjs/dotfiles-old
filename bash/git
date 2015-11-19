@@ -1,6 +1,7 @@
 
 alias g="git"
 alias gp="git push"
+alias gpt="git push --tags"
 alias gpl="git pull"
 alias ga="git add"
 alias gaa="git add -A"
