@@ -25,6 +25,7 @@
   pl = pull
   s = status
   sh = show
+  st = stash
   d = diff
   dc = diff --cached
   gedit = config --global --edit
