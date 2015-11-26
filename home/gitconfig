@@ -34,7 +34,8 @@
   ls = log --stat
   lg = log --pretty=oneline --abbrev-commit --graph
   reset = reset --soft HEAD
-  rb = reset --hard HEAD
+  rb = rebase -i
+  rlb = reset --hard HEAD
   up = remote update --prune
 [color]
   ui = true
