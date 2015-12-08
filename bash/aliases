@@ -1,6 +1,6 @@
 alias h='cd ~'
 alias home='cd ~'
-alias dots='subl ~/dotfiles'
+alias dots='cd ~/dotfiles && subl .'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
