@@ -52,3 +52,6 @@ then
 else
   alias v='vim'
 fi
+
+alias nis='npm install --save'
+alias nid='npm install --save-dev'
