@@ -9,6 +9,7 @@
   # au = add -u
   co = checkout
   cb = checkout -b
+  nb = checkout -b
   c = commit -v
   ca = commit -av
   cm = commit -vm
