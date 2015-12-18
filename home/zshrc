@@ -150,8 +150,8 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 # install latest node version
 OLD_NODE_VERSION=`nvm current`
-nvm install v5 --reinstall-packages-from=OLD_NODE_VERSION &> /dev/null
-if [[ `nvm current` != OLD_NODE_VERSION ]]; then
+nvm install v5 --reinstall-packages-from=$OLD_NODE_VERSION &> /dev/null
+if [[ `nvm current` != $OLD_NODE_VERSION ]]; then
   nvm alias default `nvm current` &> /dev/null
-  nvm uninstall OLD_NODE_VERSION
+  nvm uninstall $OLD_NODE_VERSION
 fi
