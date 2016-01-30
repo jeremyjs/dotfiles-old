@@ -163,3 +163,6 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 homeshick --quiet refresh
 
 source ~/.xsh
+
+# added by Miniconda2 3.19.0 installer
+export PATH="/home/jeremy/miniconda2/bin:$PATH"

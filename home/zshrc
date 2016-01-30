@@ -155,3 +155,6 @@ if [[ `nvm current` != $OLD_NODE_VERSION ]]; then
   nvm alias default `nvm current` &> /dev/null
   nvm uninstall $OLD_NODE_VERSION
 fi
+
+# miniconda
+PATH="/home/jeremy/miniconda2/bin:$PATH"
