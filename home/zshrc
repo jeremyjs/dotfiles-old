@@ -148,12 +148,16 @@ export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
-# install latest node version
-OLD_NODE_VERSION=`nvm current`
-nvm install v5 --reinstall-packages-from=$OLD_NODE_VERSION &> /dev/null
-if [[ `nvm current` != $OLD_NODE_VERSION ]]; then
-  nvm alias default `nvm current` &> /dev/null
-  nvm uninstall $OLD_NODE_VERSION
+# install latest stable node version
+if [[ `nvm ls-remote stable` != `nvm ls current` ]]; then
+  OLD_NODE_VERSION=`nvm current`
+  echo "installing latest stable node version"
+  echo `nvm ls-remote stable`
+  nvm install stable --reinstall-packages-from=$OLD_NODE_VERSION &> /dev/null
+  nvm alias default stable &> /dev/null
+  if [[ $OLD_NODE_VERSION != system ]]; then
+    nvm uninstall $OLD_NODE_VERSION
+  fi
 fi
 
 # miniconda
