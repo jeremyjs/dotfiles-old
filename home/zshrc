@@ -162,3 +162,6 @@ fi
 
 # miniconda
 PATH="/home/jeremy/miniconda2/bin:$PATH"
+
+# ./node_modules/.bin/
+PATH="./node_modules/.bin/:$PATH"
